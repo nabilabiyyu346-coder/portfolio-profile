@@ -1,16 +1,7 @@
 // ============================================================
-// Mobile nav toggle
+// Mobile nav toggle & galeri lightbox sekarang ditangani oleh
+// Alpine.js langsung lewat atribut x-data / @click di index.html.
 // ============================================================
-const navToggle = document.getElementById('navToggle');
-const navLinks = document.getElementById('navLinks');
-
-navToggle.addEventListener('click', () => {
-  navLinks.classList.toggle('is-open');
-});
-
-navLinks.querySelectorAll('a').forEach(link => {
-  link.addEventListener('click', () => navLinks.classList.remove('is-open'));
-});
 
 // ============================================================
 // Contact form (client-side only demo — hubungkan ke backend
@@ -34,12 +25,6 @@ form.addEventListener('submit', (event) => {
   note.style.color = '#52735F';
   form.reset();
 });
-
-// ============================================================
-// TODO: ganti '#' pada #projectLink dengan URL situs Toko Batik
-// setelah situs dinamis selesai di-deploy.
-// ============================================================
-document.getElementById('projectLink').setAttribute('href', '#');
 
 // Footer year
 document.getElementById('year').textContent = new Date().getFullYear();
