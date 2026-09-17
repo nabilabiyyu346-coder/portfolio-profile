@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nabil Abiyyu Amru Ramadhan — Junior Web Developer</title>
+<meta name="description" content="Portofolio Nabil Abiyyu Amru Ramadhan, Junior Web Developer.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <a href="#beranda" class="nav__brand">
+    <img src="images/logo-sekolah.png" alt="Logo SMK Negeri 1 Jenangan Ponorogo" class="nav__logo">
+  </a>
+  <button class="nav__toggle" id="navToggle" aria-label="Buka menu">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav__links" id="navLinks">
+    <li><a href="#beranda">Beranda</a></li>
+    <li><a href="#tentang">Tentang</a></li>
+    <li><a href="#profil">Profil</a></li>
+    <li><a href="#pendidikan">Pendidikan</a></li>
+    <li><a href="#pengalaman">Pengalaman</a></li>
+    <li><a href="#skill">Skill</a></li>
+    <li><a href="#proyek">Proyek</a></li>
+    <li><a href="#sertifikat">Sertifikat</a></li>
+    <li><a href="#kegiatan">Kegiatan</a></li>
+    <li><a href="#artikel">Artikel</a></li>
+    <li><a href="#kontak">Kontak</a></li>
+  </ul>
+</nav>
+
+<!-- ============ HERO ============ -->
+<header class="hero" id="beranda">
+  <div class="hero__text">
+    <p class="hero__role">Junior Web Developer</p>
+    <h1 class="hero__name">Nabil Abiyyu Amru Ramadhan</h1>
+    <p class="hero__lede">Membangun antarmuka web yang rapi, cepat, dan enak dipakai — dari halaman statis sampai aplikasi terhubung basis data.</p>
+    <div class="hero__actions">
+      <a href="#proyek" class="btn btn--solid">Lihat proyek</a>
+      <a href="#kontak" class="btn btn--ghost">Hubungi saya</a>
+    </div>
+  </div>
+
+  <div class="hero__panel">
+    <div class="code-card">
+      <div class="code-card__bar">
+        <span></span><span></span><span></span>
+        <p>profil.js</p>
+      </div>
+      <pre class="code-card__body"><code><span class="c-key">const</span> developer <span class="c-op">=</span> {
+  nama<span class="c-op">:</span> <span class="c-str">"Nabil Abiyyu Amru Ramadhan"</span>,
+  peran<span class="c-op">:</span> <span class="c-str">"Junior Web Developer"</span>,
+  fokus<span class="c-op">:</span> [<span class="c-str">"HTML"</span>, <span class="c-str">"CSS"</span>, <span class="c-str">"JavaScript"</span>],
+  status<span class="c-op">:</span> <span class="c-str">"siap kerja sama"</span>
+};</code></pre>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============ TENTANG ============ -->
+  <section class="section" id="tentang">
+    <div class="section__head">
+      <p class="section__index">01</p>
+      <h2>Tentang saya</h2>
+    </div>
+    <div class="about">
+      <div class="about__portrait" aria-hidden="true">
+        <img src="images/foto-profil.jpg" alt="Foto Nabil Abiyyu Amru Ramadhan">
+      </div>
+      <div class="about__body">
+        <p>Saya seorang developer pemula yang belajar membangun web dari nol: menulis markup yang bermakna, menata tampilan dengan CSS, dan menghidupkannya dengan JavaScript. Saya tertarik pada detail kecil yang membuat sebuah situs terasa selesai — jarak antar elemen, kontras warna, dan kecepatan muat halaman.</p>
+        <p>Proyek ini disusun sebagai bagian dari Uji Sertifikasi Kompetensi skema Junior Web Developer, memuat portofolio pribadi ini serta sebuah situs usaha yang saya bangun dari sisi tampilan hingga basis data.</p>
+        <dl class="about__facts">
+          <div><dt>Basis</dt><dd>Ponorogo, Indonesia</dd></div>
+          <div><dt>Fokus</dt><dd>Front-end &amp; dasar back-end</dd></div>
+          <div><dt>Status</dt><dd>Pelajar &amp; magang</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROFIL PROFESIONAL ============ -->
+  <section class="section section--muted" id="profil">
+    <div class="section__head">
+      <p class="section__index">02</p>
+      <h2>Profil profesional</h2>
+    </div>
+    <div class="profile-info">
+      <div class="profile-info__item">
+        <p class="profile-info__label">Status saat ini</p>
+        <p class="profile-info__value">Siswa &amp; Junior Web Developer (magang)</p>
+      </div>
+      <div class="profile-info__item">
+        <p class="profile-info__label">Instansi</p>
+        <p class="profile-info__value">SMK Negeri 1 Jenangan Ponorogo</p>
+      </div>
+      <div class="profile-info__item">
+        <p class="profile-info__label">Bidang yang ditekuni</p>
+        <p class="profile-info__value">Pengembangan web front-end &amp; dasar back-end</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PENDIDIKAN ============ -->
+  <section class="section" id="pendidikan">
+    <div class="section__head">
+      <p class="section__index">03</p>
+      <h2>Pendidikan</h2>
+    </div>
+    <div class="timeline">
+      <div class="timeline__item">
+        <div class="timeline__marker"><img src="images/logo-sekolah.png" alt="Logo SMK Negeri 1 Jenangan"></div>
+        <div class="timeline__body">
+          <p class="timeline__period">Sekarang</p>
+          <h3>SMK Negeri 1 Jenangan Ponorogo</h3>
+          <p>Kompetensi keahlian di bidang rekayasa perangkat lunak / teknik informatika, dengan fokus pada pengembangan aplikasi web.</p>
+        </div>
+      </div>
+      <div class="timeline__item">
+        <div class="timeline__marker"><img src="images/logo-smp.png" alt="Logo SMP Negeri 1 Ponorogo"></div>
+        <div class="timeline__body">
+          <p class="timeline__period">Sebelumnya</p>
+          <h3>SMP Negeri 1 Ponorogo</h3>
+          <p>Menyelesaikan pendidikan menengah pertama sebelum melanjutkan ke jenjang kejuruan.</p>
+        </div>
+      </div>
+      <div class="timeline__item">
+        <div class="timeline__marker timeline__marker--dot"></div>
+        <div class="timeline__body">
+          <p class="timeline__period">Sebelumnya</p>
+          <h3>SD Negeri 1 Jingglong</h3>
+          <p>Menyelesaikan pendidikan dasar sebagai jenjang pertama sebelum melanjutkan ke SMP.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PENGALAMAN ============ -->
+  <section class="section section--muted" id="pengalaman">
+    <div class="section__head">
+      <p class="section__index">04</p>
+      <h2>Pengalaman</h2>
+    </div>
+    <div class="timeline">
+      <div class="timeline__item">
+        <div class="timeline__marker"><img src="images/logo-promedia.png" alt="Logo Promedia" class="timeline__marker-img--wide"></div>
+        <div class="timeline__body">
+          <p class="timeline__period">Praktik Kerja Lapangan (PKL)</p>
+          <h3>Magang di Promedia — Citra Digital Informatika</h3>
+          <p>Menjalani praktik kerja lapangan di bidang digital & teknologi informasi, terlibat dalam pekerjaan seputar pengembangan dan pengelolaan sistem berbasis web bersama tim.</p>
+          <p class="timeline__location"><span>Lokasi:</span> Jl. Park Regency Blk. B No.8b, Keputih, Kec. Sukolilo, Surabaya, Jawa Timur 60111</p>
+          <a href="https://www.google.com/maps/search/?api=1&query=PT+Promedia+Citra+Digital+Informatika+Jl+Park+Regency+Blok+B+No+8b+Keputih+Sukolilo+Surabaya" target="_blank" rel="noopener" class="link-arrow">Lihat lokasi di Google Maps</a>
+        </div>
+      </div>
+      <div class="timeline__item">
+        <div class="timeline__marker timeline__marker--dot"></div>
+        <div class="timeline__body">
+          <p class="timeline__period">Proyek mandiri</p>
+          <h3>Portofolio &amp; Toko Batik Lawasan</h3>
+          <p>Membangun website profil pribadi ini serta situs usaha "Batik Lawasan" dari nol — mulai dari tampilan, struktur kode, hingga basis data — sebagai bagian dari Uji Sertifikasi Kompetensi Junior Web Developer.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SKILL ============ -->
+  <section class="section" id="skill">
+    <div class="section__head">
+      <p class="section__index">05</p>
+      <h2>Skill</h2>
+    </div>
+    <div class="skill-bars">
+      <div class="skill-bars__group">
+        <h3>Bahasa &amp; markup</h3>
+        <div class="skill-bar">
+          <div class="skill-bar__head"><span>HTML5</span><span>85%</span></div>
+          <div class="skill-bar__track"><div class="skill-bar__fill" style="width:85%"></div></div>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-bar__head"><span>CSS3</span><span>80%</span></div>
+          <div class="skill-bar__track"><div class="skill-bar__fill" style="width:80%"></div></div>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-bar__head"><span>JavaScript</span><span>65%</span></div>
+          <div class="skill-bar__track"><div class="skill-bar__fill" style="width:65%"></div></div>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-bar__head"><span>PHP</span><span>70%</span></div>
+          <div class="skill-bar__track"><div class="skill-bar__fill" style="width:70%"></div></div>
+        </div>
+      </div>
+      <div class="skill-bars__group">
+        <h3>Basis data &amp; server</h3>
+        <div class="skill-bar">
+          <div class="skill-bar__head"><span>MySQL</span><span>70%</span></div>
+          <div class="skill-bar__track"><div class="skill-bar__fill" style="width:70%"></div></div>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-bar__head"><span>XAMPP</span><span>75%</span></div>
+          <div class="skill-bar__track"><div class="skill-bar__fill" style="width:75%"></div></div>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-bar__head"><span>REST API dasar</span><span>55%</span></div>
+          <div class="skill-bar__track"><div class="skill-bar__fill" style="width:55%"></div></div>
+        </div>
+      </div>
+      <div class="skill-bars__group">
+        <h3>Alat &amp; alur kerja</h3>
+        <div class="skill-bar">
+          <div class="skill-bar__head"><span>Git &amp; GitHub</span><span>65%</span></div>
+          <div class="skill-bar__track"><div class="skill-bar__fill" style="width:65%"></div></div>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-bar__head"><span>VS Code</span><span>85%</span></div>
+          <div class="skill-bar__track"><div class="skill-bar__fill" style="width:85%"></div></div>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-bar__head"><span>Figma</span><span>60%</span></div>
+          <div class="skill-bar__track"><div class="skill-bar__fill" style="width:60%"></div></div>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-bar__head"><span>Responsive Design</span><span>75%</span></div>
+          <div class="skill-bar__track"><div class="skill-bar__fill" style="width:75%"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROYEK ============ -->
+  <section class="section section--muted" id="proyek">
+    <div class="section__head">
+      <p class="section__index">06</p>
+      <h2>Proyek</h2>
+    </div>
+    <div class="project">
+      <div class="project__media" aria-hidden="true">
+        <div class="project__pattern"></div>
+      </div>
+      <div class="project__body">
+        <p class="project__tag">Website usaha · dinamis</p>
+        <h3>Konvensi Lawasan</h3>
+        <p>Situs katalog untuk usaha batik tulis: daftar produk yang diambil dari basis data, pencarian per kategori, halaman detail produk, dan formulir pemesanan. Dibangun untuk melengkapi kompetensi pemrograman dinamis pada uji sertifikasi ini.</p>
+        <ul class="chips chips--tight">
+          <li>PHP</li><li>MySQL</li><li>CSS3</li>
+        </ul>
+        <a href="http://localhost/toko-batik" class="link-arrow" id="projectLink">Kunjungi situs toko batik</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERTIFIKAT / PRESTASI ============ -->
+  <section class="section" id="sertifikat">
+    <div class="section__head">
+      <p class="section__index">07</p>
+      <h2>Sertifikat &amp; prestasi</h2>
+    </div>
+    <div class="certificates">
+      <div class="certificate-card">
+        <p class="certificate-card__tag">Sedang berlangsung</p>
+        <h3>Uji Sertifikasi Kompetensi — Skema Junior Web Developer</h3>
+        <p>Sertifikasi teknis oleh Lembaga Sertifikasi Profesi (LSP), membuktikan kompetensi membangun website statis dan dinamis sesuai standar industri.</p>
+      </div>
+      <div class="certificate-card certificate-card--has-image">
+        <img src="images/sertifikat-kunjungan-industri.jpg" alt="Sertifikat Kunjungan Industri SMKN 1 Jenangan dari Gamelab Indonesia" class="certificate-card__image">
+        <p class="certificate-card__tag">Gamelab Indonesia &times; Educa Studio</p>
+        <h3>Kunjungan Industri SMKN 1 Jenangan</h3>
+        <p>Sertifikat partisipasi sebagai peserta kunjungan industri di PT Educa Sisfomedia Indonesia, Salatiga — 5 Januari 2026. ID: GL3703729824.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ KEGIATAN ============ -->
+  <section class="section section--muted" id="kegiatan">
+    <div class="section__head">
+      <p class="section__index">08</p>
+      <h2>Kegiatan</h2>
+    </div>
+    <div class="activities">
+      <div class="activity-card activity-card--has-image">
+        <div class="activity-card__media">
+          <img src="images/kegiatan-kunjungan-gamelab.jpg" alt="Kunjungan industri siswa SMKN 1 Jenangan ke kantor Gamelab Indonesia">
+        </div>
+        <p class="activity-card__tag">Kunjungan Industri</p>
+        <p class="activity-card__location">
+          <span>Lokasi:</span> Kantor Gamelab Indonesia / PT Educa Sisfomedia Indonesia, Jl. Kalisombo No.18, Salatiga, Kec. Sidorejo, Kota Salatiga, Jawa Tengah
+        </p>
+        <a href="https://www.google.com/maps/search/?api=1&query=PT+Educa+Sisfomedia+Indonesia+Gamelab+Indonesia+Jl+Kalisombo+No+18+Salatiga" target="_blank" rel="noopener" class="link-arrow">Lihat lokasi di Google Maps</a>
+      </div>
+      <div class="activity-card activity-card--has-image">
+        <div class="activity-card__media">
+          <img src="images/seminar-teknologi.png" alt="Seminar teknologi di GameLab Indonesia">
+        </div>
+        <p class="activity-card__tag">Seminar</p>
+        <h3>Seminar Teknologi di GameLab</h3>
+        <p class="activity-card__desc">Dokumentasi kegiatan seminar</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ARTIKEL / BLOG ============ -->
+  <section class="section" id="artikel">
+    <div class="section__head">
+      <p class="section__index">09</p>
+      <h2>Artikel</h2>
+    </div>
+    <article class="article-card">
+      <div class="article-card__head">
+        <img src="images/logo-promedia.png" alt="Logo Promedia" class="article-card__brand-logo">
+        <div>
+          <p class="article-card__tag">Cerita magang</p>
+          <h3>Pengalaman Praktik Kerja Lapangan di Promedia</h3>
+        </div>
+      </div>
+      <p>Selama menjalani Praktik Kerja Lapangan (PKL) di Promedia — Citra Digital Informatika, saya berkesempatan belajar langsung bagaimana sebuah tim IT bekerja di luar lingkungan sekolah. Mulai dari cara berdiskusi memecahkan masalah teknis, membagi tugas antar anggota tim, sampai membiasakan diri dengan alur kerja yang lebih terstruktur.</p>
+      <p>Pengalaman ini banyak membentuk cara saya memandang dunia kerja di bidang teknologi — bukan cuma soal menulis kode, tapi juga komunikasi, kedisiplinan, dan kemauan untuk terus belajar hal baru.</p>
+      <div class="article-card__gallery">
+        <img src="images/magang-promedia-1.jpg" alt="Dokumentasi kegiatan magang di Promedia bersama tim">
+        <img src="images/magang-promedia-2.jpg" alt="Dokumentasi suasana kerja tim selama magang di Promedia">
+      </div>
+    </article>
+  </section>
+
+  <!-- ============ KONTAK ============ -->
+  <section class="section section--muted" id="kontak">
+    <div class="section__head">
+      <p class="section__index">10</p>
+      <h2>Kontak</h2>
+    </div>
+    <div class="contact">
+      <div class="contact__info">
+        <p>Ada proyek atau posisi yang cocok? Kirim pesan, saya akan membalas secepatnya.</p>
+        <ul class="contact__list">
+          <li><span>Email</span><a href="mailto:nabil.abiyyu@email.com">nabil.abiyyu@email.com</a></li>
+          <li><span>Telepon</span><a href="tel:+6285147425827">+62 851-4742-5827</a></li>
+          <li><span>GitHub</span><a href="https://github.com/nabilabiyyu346-coder" target="_blank" rel="noopener">Profile GitHub</a></li>
+          <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/nabil-abiyyu-amru-ramadhan-4a3b27399" target="_blank" rel="noopener">Profile LinkedIn</a></li>
+        </ul>
+      </div>
+      <form class="contact__form" id="contactForm" novalidate>
+        <label for="name">Nama</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Pesan</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit" class="btn btn--solid">Kirim pesan</button>
+        <p class="contact__note" id="formNote" role="status"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>&copy; <span id="year"></span> Nabil Abiyyu Amru Ramadhan. Dibangun sebagai bagian dari Uji Sertifikasi Kompetensi Junior Web Developer.</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
